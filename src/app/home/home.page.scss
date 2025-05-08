@@ -1,0 +1,77 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+::ng-deep .custom-alert .alert-wrapper {
+  border-radius: 20px;
+  background: #2a2a2a;
+  color: #ffffff;
+  padding: 20px;
+  max-width: 90%;
+  margin: auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(0%) !important;
+  animation: fadeInScale 0.3s ease;
+}
+
+::ng-deep .custom-alert .alert-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+::ng-deep .custom-alert .alert-radio-label {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+::ng-deep .custom-alert .alert-button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+::ng-deep .custom-alert .alert-button {
+  flex: 1;
+  margin: 0 4px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #4cd964;
+}
+
+@keyframes fadeInScale {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
